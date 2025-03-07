@@ -1,17 +1,18 @@
 import face from '../images/face.jpg';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import { BasicLayout, Description, Hide, Image } from '../styles';
 
 const AboutSection = () =>{
     return (
-        <About>
+        <BasicLayout>
          <Description>
             <div className="title">
                 <Hide>
-                    <h2>Maverick, Front-end developer</h2>
+                    <h2>Maverick, Front-end developer,</h2>
                 </Hide>
 
                 <Hide>
-                    <h2>Always evolving</h2>
+                    <h2>Always evolving.</h2>
                 </Hide>
 
                 <Hide>
@@ -28,38 +29,10 @@ const AboutSection = () =>{
          <Image>
             <img src={face} alt="guy holding camera" />
          </Image>
-        </About>
+        </BasicLayout>
     )
 }
 
-//styled components 
-const About = styled.div`
-min-height: 90vh;
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 5rem 10rem;
-color: #fff;
-`
 
-const Description = styled.div`
-    flex: 1;
-     h2{
-        font-weight :lighter;
-    }
-`
-const Image = styled.div`
-flex : 1;
-overflow: hidden;
-img{
-    width: 100%;
-    height: 80vh;
-    object-fit :cover;
-}
-    
-`
-const Hide = styled.div`
-    overflow: hidden;
-`
 
 export default AboutSection
