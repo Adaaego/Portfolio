@@ -22,7 +22,8 @@ const GlobalStyle = createGlobalStyle`
     color: #fff;
     padding: 1rem 2rem;
     transition : all 0.5s ease;
-    font-family: 'Lobster', sans-serif;
+    font-family: "Atma", system-ui;
+   
 
     &:hover{
      background-color: ${primaryColor};
@@ -51,6 +52,7 @@ const GlobalStyle = createGlobalStyle`
  h4{
     font-weight :bold;
     color:${primaryColor};
+    font-size : 2rem;
  }
  a{
     font-size :1.1rem;
