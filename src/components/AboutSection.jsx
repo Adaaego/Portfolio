@@ -21,7 +21,7 @@ const AboutSection = () =>{
 
             </div>
             <p> Contact me for scalable, high-performance 
-            front-end solutions—responsive, optimized, and built to last.</p>
+            front-end solutions— responsive, optimized, and built to last.</p>
 
             <button>Contact Me</button>
          </Description>
