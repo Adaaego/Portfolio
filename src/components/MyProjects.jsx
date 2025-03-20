@@ -6,13 +6,17 @@ import athlete from '../images/athlete-small.png';
 import theracer from '../images/theracer-small.png';
 import goodtimes from '../images/goodtimes-small.png';
 
+//animations 
+import { motion } from "framer-motion";
+import { PageAnimation } from "../../animations";
+
 
 
 
 
 const MyProjects = () =>{
     return(
-        <Work>
+        <Work variants={PageAnimation} initial ="hidden" animate="show" exit = "exit">
             <Movie>
              <h2>Employee management dashboard</h2>
              <div className="line"></div>
@@ -37,7 +41,7 @@ const MyProjects = () =>{
     )
 }
 
-const Work = styled.div`
+const Work = styled(motion.div)`
     min-height: 100vh;
     overflow: hidden;
     padding: 5rem 10rem;
