@@ -45,7 +45,7 @@ export const PageAnimation ={
     export const photoAnim = {
       hidden: { scale: 0, opacity: 0 },
       show: {
-        scale: 0.8,
+        scale: 1,
         opacity: 1,
         transition: {
           ease: "easeOut",

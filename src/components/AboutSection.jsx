@@ -1,4 +1,7 @@
 import face from '../images/face.jpg';
+import Wave from './Wave';
+
+//styles
 import styled from 'styled-components';
 import { BasicLayout, Description, Hide, Image } from '../styles';
 //Animations
@@ -40,6 +43,7 @@ const AboutSection = () =>{
          <Image>
             <motion.img variants={photoAnim} src={face} alt="guy holding camera" />
          </Image>
+         <Wave />
         </BasicLayout>
     )
 }
