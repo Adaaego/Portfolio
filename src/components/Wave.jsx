@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Wave = () => {
     return(
         <WaveSvg viewBox="0 0 1440 363" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path 
+        <motion.path 
         initial={{ pathLength: 0, pathOffset: 1 }}
         animate={{ pathLength: 1, pathOffset: 0 }}
         transition={{ duration: 1 }}

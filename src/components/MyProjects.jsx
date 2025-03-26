@@ -8,7 +8,7 @@ import goodtimes from '../images/goodtimes-small.png';
 
 //animations 
 import { motion } from "framer-motion";
-import { PageAnimation } from "../../animations";
+import { PageAnimation, projectHeading, lineAnim} from "../../animations";
 
 
 
@@ -18,21 +18,21 @@ const MyProjects = () =>{
     return(
         <Work variants={PageAnimation} initial ="hidden" animate="show" exit = "exit">
             <Movie>
-             <h2>Employee management dashboard</h2>
-             <div className="line"></div>
+             <motion.h2 variants={projectHeading} >Employee management dashboard</motion.h2>
+             <motion.div  variants={lineAnim} className="line"></motion.div>
              <Link to = "/Projects/the-athlete">
              <img src={athlete} alt="athlete" /></Link>
             </Movie>
 
             <Movie>
-             <h2>The Racer</h2>
+             <motion.h2 variants={projectHeading}>The Racer</motion.h2>
              <div className="line"></div>
              <Link to = "/Projects/the-racer">
              <img src={theracer} alt="racer" /></Link>
             </Movie>
 
             <Movie>
-             <h2>Employee management dashboard</h2>
+             <motion.h2 variants={projectHeading}>Employee management dashboard</motion.h2>
              <div className="line"></div>
              <Link to="/Projects/good-times">
              <img src={goodtimes} alt="goodtimes" /></Link>
@@ -48,6 +48,7 @@ const Work = styled(motion.div)`
 
     h2{
         padding: 1rem 0rem;
+        color : #cccccc
     }
 `;
 
