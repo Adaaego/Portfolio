@@ -1,6 +1,7 @@
 
 import styled from 'styled-components';
 import { BasicLayout } from '../styles';
+import Toggle from './Toggle';
 
 const FaqSection = () => {
     return(
@@ -16,6 +17,7 @@ const FaqSection = () => {
             <div className="faq-line"></div>
         </div>
 
+<Toggle>
         <div className="question">
             <h4>Daily Schedule</h4>
             <div className="answer">
@@ -24,7 +26,9 @@ const FaqSection = () => {
             </div>
             <div className="faq-line"></div>
         </div>
+    </Toggle>
 
+     <Toggle>
         <div className="question">
             <h4>Payment methods</h4>
             <div className="answer">
@@ -33,7 +37,9 @@ const FaqSection = () => {
             </div>
             <div className="faq-line"></div>
         </div>
+    </Toggle>
 
+    <Toggle>
         <div className="question">
             <h4>Services offered</h4>
             <div className="answer">
@@ -42,6 +48,7 @@ const FaqSection = () => {
             </div>
             <div className="faq-line"></div>
         </div>
+    </Toggle>
 
         </Faq>
     )
