@@ -2,53 +2,51 @@
 import styled from 'styled-components';
 import { BasicLayout } from '../styles';
 import Toggle from './Toggle';
+import { LayoutGroup } from 'framer-motion';
 
 const FaqSection = () => {
     return(
         <Faq>
         <h2> FAQ <span>Any Questions?</span></h2>
 
+<LayoutGroup>
+<Toggle title='How do i start?'>
         <div className="question">
-            <h4>How do i start?</h4>
-            <div className="answer">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, aliquid.</p>
-            </div>
-            <div className="faq-line"></div>
-        </div>
 
-<Toggle>
-        <div className="question">
-            <h4>Daily Schedule</h4>
             <div className="answer">
                 <p>Lorem ipsum dolor sit amet.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, aliquid.</p>
             </div>
-            <div className="faq-line"></div>
+        </div>
+        </Toggle>
+
+<Toggle title='Daily schedule'>
+        <div className="question">
+            <div className="answer">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, aliquid.</p>
+            </div>
         </div>
     </Toggle>
 
-     <Toggle>
+     <Toggle title='Payment Methods'>
         <div className="question">
-            <h4>Payment methods</h4>
             <div className="answer">
                 <p>Lorem ipsum dolor sit amet.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, aliquid.</p>
             </div>
-            <div className="faq-line"></div>
         </div>
     </Toggle>
 
-    <Toggle>
+    <Toggle title='Services Offered'>
         <div className="question">
-            <h4>Services offered</h4>
             <div className="answer">
                 <p>Lorem ipsum dolor sit amet.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, aliquid.</p>
             </div>
-            <div className="faq-line"></div>
         </div>
     </Toggle>
+    </LayoutGroup>
 
         </Faq>
     )
