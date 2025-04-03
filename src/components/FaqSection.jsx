@@ -2,9 +2,12 @@
 import styled from 'styled-components';
 import { BasicLayout } from '../styles';
 import Toggle from './Toggle';
-import { LayoutGroup } from 'framer-motion';
+import { LayoutGroup, motion } from 'framer-motion';
+import useScroll from './useScroll';
+import {fade} from '../../animations'
 
 const FaqSection = () => {
+    const [element, controls] = useScroll();
     return(
         <Faq>
         <h2> FAQ <span>Any Questions?</span></h2>
@@ -14,8 +17,8 @@ const FaqSection = () => {
         <div className="question">
 
             <div className="answer">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, aliquid.</p>
+                <motion.p  ref={element} variants={fade} animate ={controls} initial="hidden">Lorem ipsum dolor sit amet.</motion.p>
+                <motion.p ref={element} variants={fade} animate ={controls} initial="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, aliquid.</motion.p>
             </div>
         </div>
         </Toggle>
@@ -23,8 +26,8 @@ const FaqSection = () => {
 <Toggle title='Daily schedule'>
         <div className="question">
             <div className="answer">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, aliquid.</p>
+                <motion.p ref={element} variants={fade} animate ={controls} initial="hidden">Lorem ipsum dolor sit amet.</motion.p>
+                <motion.p ref={element} variants={fade} animate ={controls} initial="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, aliquid.</motion.p>
             </div>
         </div>
     </Toggle>
@@ -32,8 +35,8 @@ const FaqSection = () => {
      <Toggle title='Payment Methods'>
         <div className="question">
             <div className="answer">
-                <p>Lorem ipsum dolor sit amet.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, aliquid.</p>
+                <motion.p ref={element} variants={fade} animate ={controls} initial="hidden">Lorem ipsum dolor sit amet.</motion.p>
+                <motion.p ref={element} variants={fade} animate ={controls} initial="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, aliquid.</motion.p>
             </div>
         </div>
     </Toggle>
