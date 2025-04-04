@@ -2,16 +2,17 @@
 import { motion } from "framer-motion";
 import { PageAnimation, titleAnim  } from "../../animations";
 import styled from "styled-components";
-
-
+import ScrollUp from "../components/ScrollUp";
 const ContactMe = () =>{
     return(
+       
         <ContactStyle
         exit="exit"
         variants={PageAnimation}
         initial="hidden"
         animate="show"
       >
+         <ScrollUp/>
         <Title>
           <Hide>
             <motion.h2 variants={titleAnim}>Get in touch.</motion.h2>

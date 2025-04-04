@@ -4,6 +4,9 @@ import { useLocation} from "react-router-dom";
 import { MovieState } from "../movieState";
 import { div } from "framer-motion/client";
 
+//import scroll up
+import ScrollUp from "../components/ScrollUp";
+
 //animations 
 import { motion } from "framer-motion";
 import { PageAnimation } from "../../animations";
@@ -48,6 +51,7 @@ const MovieDetail = () =>{
               
 
             )}
+            <ScrollUp/>
         </div>
     )
 };
