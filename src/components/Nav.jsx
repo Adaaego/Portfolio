@@ -30,8 +30,6 @@ const StyledNav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 10;
-    border-bottom : 1px solid #fff;
-    background-color: blueviolet;
 
     #logo{
         font-family: "Chewy", system-ui;
