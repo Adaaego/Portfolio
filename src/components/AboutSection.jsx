@@ -1,5 +1,4 @@
-import face from '../images/face.jpg';
-import Wave from './Wave';
+import face from '../images/bnwrmbg.png';
 
 //styles
 import styled from 'styled-components';
@@ -24,16 +23,11 @@ const AboutSection = () =>{
                 </Hide>
 
                 <Hide>
-                    <motion.h2 variants={titleAnim}>Always evolving.</motion.h2>
-                </Hide>
-
-                <Hide>
-                    <motion.h2 variants={titleAnim}>The <span>Lis effect</span></motion.h2>
+                    <motion.h2 variants={titleAnim}>Always evolving. The <span>Lis effect</span></motion.h2>
                 </Hide>
 
             </motion.div>
-            <motion.p variants={fade}> Contact me for scalable, high-performance 
-            front-end solutions— responsive, optimized, and built to last.</motion.p>
+            <motion.p variants={fade}> Contact me for front-end builds that are scalable, high-performance, responsive, and built to last.</motion.p>
             <Link to="/Contact">
              <motion.button variants={fade}>Contact Me</motion.button>
             </Link>
@@ -43,7 +37,6 @@ const AboutSection = () =>{
          <Image>
             <motion.img variants={photoAnim} src={face} alt="guy holding camera" />
          </Image>
-         <Wave />
         </BasicLayout>
     )
 }

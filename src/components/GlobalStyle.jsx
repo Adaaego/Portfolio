@@ -30,13 +30,19 @@ const GlobalStyle = createGlobalStyle`
      color: #fff;
       
     }
+    //media query
+    @media screen and (max-width: 1562px){
+      font-size: 0.9rem;
+      padding: 0.8rem 1.5rem;
+    }
  }
 
  h2{
     font-weight : lighter;
-    font-size : 4rem;
+    font-size : 3rem;
     color: #fff;
  }
+ 
 
  h3{
     color: #fff;
@@ -45,7 +51,7 @@ const GlobalStyle = createGlobalStyle`
  p{
     padding: 3rem 0;
     color: #ccc;
-    font-size : 1.4rem;
+    font-size : 1.2rem;
     line-height: 150%;
  }
 
