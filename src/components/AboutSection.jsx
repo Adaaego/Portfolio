@@ -2,7 +2,7 @@ import face from '../images/bnwrmbg.png';
 
 //styles
 import styled from 'styled-components';
-import { BasicLayout, Description, Hide, Image } from '../styles';
+import { BasicLayout, Description, Hide, Image, ImageWrap } from '../styles';
 //Animations
 import { motion } from 'framer-motion';
 import { titleAnim, fade, photoAnim} from '../../animations';
@@ -16,6 +16,9 @@ const AboutSection = () =>{
     
     return (
         <BasicLayout>
+          <ImageWrap>
+            <img src={face} alt="my face" />
+          </ImageWrap>
          <Description>
             <motion.div>
                 <Hide>
@@ -35,7 +38,7 @@ const AboutSection = () =>{
          </Description>
 
          <Image>
-            <motion.img variants={photoAnim} src={face} alt="guy holding camera" />
+            <motion.img variants={photoAnim} src={face} alt="my face" />
          </Image>
         </BasicLayout>
     )

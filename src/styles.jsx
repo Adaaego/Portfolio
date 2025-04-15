@@ -9,6 +9,16 @@ export const BasicLayout = styled.div`
   padding: 5rem 10rem;
   color: white;
 
+  @media screen and (max-width:1355px){
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4rem 7.5rem
+}
+
+@media screen and (max-width:1154px){
+    align-items: center;
+}
+
  
 `
 
@@ -19,6 +29,9 @@ export const Description = styled.div`
      h2{
         font-weight :lighter;
     }
+    p{
+        font-weight: lighter;
+    }
 
 //media query 
  @media screen and (max-width:1562px) {
@@ -28,7 +41,45 @@ export const Description = styled.div`
  @media screen and (max-width:1534px) {
    p{
       font-size : 0.95rem;   }
- }
+ };
+
+ @media screen and (max-width:1355px){
+    display: block;
+    margin-top: 70px;
+};
+
+@media screen and (max-width:1355px){
+   h2{
+    font-size: 3.7rem;
+    
+   }
+
+   p{
+    font-size : 1.4rem;
+   
+   }
+}
+
+
+@media screen and (max-width:1154px){
+    text-align : center
+}
+
+@media screen and (max-width:1006px){
+    h2{
+        font-size : 3rem;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 861px){
+    h2{
+        font-size : 2rem
+    }
+}
+
  
 `
 export const Image = styled.div`
@@ -48,6 +99,12 @@ img{
     img{
         height:55vh;
     }
+};
+
+@media screen and (max-width:1355px){
+    img{
+       display: none;
+    }
 }
     
 `
@@ -57,4 +114,28 @@ export const Hide = styled.div`
 export const StyledIcon = styled.img`
     width: 50px;
     height: 45px;
+`;
+
+
+export const ImageWrap = styled.div`
+   
+    display: none;
+
+    img{
+      width: 230px;
+      height: 290px;
+      margin-top: 24px;
+ 
+    }
+
+    @media screen and (max-width:1355px){
+    display: flex;
+    justify-content: center;
+    width: 357px;
+    height: 350px;
+    background-color: #23d997;
+    border-radius: 50%;
+   
+}
+
 `
