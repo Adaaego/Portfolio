@@ -98,7 +98,7 @@ export const Description = styled.div`
         font-size : 1.2rem;
     }
     p{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
  }
 
