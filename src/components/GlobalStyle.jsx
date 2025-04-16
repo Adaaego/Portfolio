@@ -34,6 +34,12 @@ const GlobalStyle = createGlobalStyle`
     @media screen and (max-width: 1562px){
       font-size: 0.9rem;
       padding: 0.8rem 1.5rem;
+    };
+
+    @media screen and (max-width: 480px){
+      font-size: 0.6rem;
+      padding: 0%.6rem 1.2rem;
+    }
     }
  }
 
