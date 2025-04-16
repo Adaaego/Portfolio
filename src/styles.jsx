@@ -95,7 +95,7 @@ export const Description = styled.div`
 //breakpoints for mobile
 @media screen and (max-width: 480px) {
     h2{
-        /* font-size : 1.4rem; */
+        font-size : 1.4rem;
     }
     p{
         font-size: 1rem;
