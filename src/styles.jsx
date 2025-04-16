@@ -19,6 +19,11 @@ export const BasicLayout = styled.div`
     align-items: center;
 }
 
+//breakpoint for mobiles
+@media screen and (max-width: 480px) { 
+    padding: 2rem;
+}
+
  
 `
 
@@ -79,11 +84,23 @@ export const Description = styled.div`
         font-size : 2.4rem
     }
 };
+
+//standard breakpoint for tabs
 @media screen and (max-width: 768px) { 
     h2{
         font-size: 1.7rem;
     }
 }
+
+//breakpoints for mobile
+@media screen and (max-width: 480px) {
+    h2{
+        font-size : 1.2rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
+ }
 
  
 `
@@ -143,8 +160,10 @@ export const ImageWrap = styled.div`
    
 };
 
+
+//standard breakpoint for tabs
 @media screen and (max-width: 768px) { 
-    width: 235px;
+    width: 240px;
     height: 230px;
     align-items: center;
 
