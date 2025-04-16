@@ -38,10 +38,10 @@ const GlobalStyle = createGlobalStyle`
 
     @media screen and (max-width: 480px){
       font-size: 0.6rem;
-      padding: 0%.6rem 1.2rem;
+      padding: 0.6rem;
     }
     }
- }
+ 
 
  h2{
     font-weight : lighter;
