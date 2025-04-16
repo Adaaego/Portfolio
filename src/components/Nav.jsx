@@ -50,6 +50,11 @@ const StyledNav = styled.nav`
         padding-left : 10rem;
         position: relative;
     }
+    @media screen and (max-width: 1225px){
+        ul{
+            display: none;
+        }
+    }
 `;
 
 

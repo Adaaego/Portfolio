@@ -76,7 +76,12 @@ export const Description = styled.div`
 
 @media screen and (max-width: 861px){
     h2{
-        font-size : 2rem
+        font-size : 2.4rem
+    }
+};
+@media screen and (max-width: 768px) { 
+    h2{
+        font-size: 1.7rem;
     }
 }
 
@@ -136,6 +141,18 @@ export const ImageWrap = styled.div`
     background-color: #23d997;
     border-radius: 50%;
    
+};
+
+@media screen and (max-width: 768px) { 
+    width: 235px;
+    height: 230px;
+    align-items: center;
+
+    img{
+        width: 130px;
+        height: 170px;
+        margin-top : 30px
+    }
 }
 
 `
