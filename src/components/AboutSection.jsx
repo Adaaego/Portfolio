@@ -1,4 +1,4 @@
-import face from '../images/bnwrmbg.png';
+import face from '../images/bnwpic.jpeg';
 
 //styles
 import styled from 'styled-components';
@@ -22,15 +22,17 @@ const AboutSection = () =>{
          <Description>
             <motion.div>
                 <Hide>
-                    <motion.h2 variants={titleAnim}>Maverick, Front-end developer,</motion.h2>
+                    <motion.h2 variants={titleAnim}>Just an Igbo girl that</motion.h2>
                 </Hide>
 
                 <Hide>
-                    <motion.h2 variants={titleAnim}>Always evolving. The <span>Lis effect</span></motion.h2>
+                    <motion.h2 variants={titleAnim}>Codes boldly.<span>  The Lis Effect</span></motion.h2>
                 </Hide>
 
             </motion.div>
-            <motion.p variants={fade}> Contact me for front-end builds that are scalable, high-performance, responsive, and built to last.</motion.p>
+            <motion.p variants={fade}> Reach out for projects, collabs, dev magic or just say hello
+
+</motion.p>
             <Link to="/Contact">
              <motion.button variants={fade}>Contact Me</motion.button>
             </Link>

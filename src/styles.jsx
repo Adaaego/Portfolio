@@ -50,11 +50,7 @@ export const Description = styled.div`
 
  @media screen and (max-width:1355px){
     display: block;
-    margin-top: 70px;
-};
-
-@media screen and (max-width:1355px){
-   h2{
+    h2{
     font-size: 3.7rem;
     
    }
@@ -63,7 +59,10 @@ export const Description = styled.div`
     font-size : 1.4rem;
    
    }
-}
+   
+};
+
+
 
 
 @media screen and (max-width:1154px){
@@ -94,6 +93,8 @@ export const Description = styled.div`
 
 //breakpoints for mobile
 @media screen and (max-width: 480px) {
+
+   
     h2{
         font-size : 1.4rem;
     }
@@ -111,7 +112,7 @@ z-index: 2;
 
 img{
     width: 85%;
-    height: 70vh;
+    height: 65vh;
     object-fit :cover;
     margin-left: 20px;
     border-radius :50%;
@@ -144,9 +145,10 @@ export const ImageWrap = styled.div`
     display: none;
 
     img{
-      width: 230px;
-      height: 290px;
-      margin-top: 24px;
+      width: 235px;
+      height: 250px;
+      border-radius: 50%;
+      
  
     }
 
@@ -155,8 +157,9 @@ export const ImageWrap = styled.div`
     justify-content: center;
     width: 357px;
     height: 350px;
-    background-color: #23d997;
+    /* background-color: #23d997; */
     border-radius: 50%;
+   
    
 };
 
@@ -166,11 +169,13 @@ export const ImageWrap = styled.div`
     width: 240px;
     height: 230px;
     align-items: center;
+    justify-content: center;
+    margin-bottom : 70px;
 
     img{
-        width: 130px;
-        height: 170px;
-        margin-top : 30px
+        /* width: 130px;
+        height: 170px; */
+        /* margin-top : 30px */
     }
 }
 
