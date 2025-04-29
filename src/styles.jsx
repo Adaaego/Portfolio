@@ -173,10 +173,10 @@ export const ImageWrap = styled.div`
     margin-bottom : 70px;
 
     img{
-        /* width: 130px;
-        height: 170px; */
-        /* margin-top : 30px */
+        width: 165px;
+        height: 170px; 
     }
+    
 }
 
 `
