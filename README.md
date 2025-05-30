@@ -1,17 +1,38 @@
-<<<<<<< HEAD
-# Capture-portfolio
-Capture Portfolio is a modern React-based portfolio website showcasing my projects and skills. Built with React, Styled Components, and Framer Motion, it features smooth animations and a responsive design. 🚀 Check it out!
-=======
-# React + Vite
+# 🎬 Capture Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Capture Portfolio** is a modern and visually engaging portfolio website built using **React**, **Vite**, **Styled Components**, and **Framer Motion**.
 
-Currently, two official plugins are available:
+> ⚠️ Note: This is a static, **dummy project** — no real projects are uploaded. It serves as a design and animation showcase.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- ⚛️ Built with React + Vite for fast development
+- 🎨 Styled Components for scoped and dynamic styling
+- 🎞 Framer Motion for smooth transitions and animations
+- 🧭 Page routing with smooth navigation
+- 📱 Fully responsive design
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> initial commit
+## 📦 Tech Stack
+
+- React
+- Vite
+- Styled Components
+- Framer Motion
+- React Router
+
+## 🔌 Development Setup
+
+To run this project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/capture-portfolio.git
+
+# Navigate into the folder
+cd capture-portfolio
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
